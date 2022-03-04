@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuevo pedido</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", sans-serif;
+      }
+      nav {
+          font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <img src="logo.png" alt="logo" width="92px" height="75px" />
+      <h1>Pastelería Cherry</h1>
+    </div>
+    <hr>
+    <nav class="navbar navbar">
+        <a href="pastelero.html" style="color:rgb(194, 7, 7); text-decoration: none">Pagina para pastelero</a>
+    </nav>
+    <h2>Nuevo pedido</h2>
+
+    <h3>Datos del cliente</h3>
+    <label for="nombre">Nombre: </label>
+    <input type="text" id="nombre" name="nombre" /><br /><br />
+    <label for="telefono">Telefono: </label>
+    <input type="tel" id="telefono" name="telefono" /><br /><br />
+    <label for="correo">Correo: </label>
+    <input type="email" id="correo" name="correo" /><br /><br />
+
+    <h3>Pastel</h3>
+    <p>Para 12 personas.</p>
+
+    <h3>Bizcocho o pan</h3>
+    <input type="checkbox" id="pan1" name="pan1" value="Vainilla" />
+    <label for="pan1">Vainilla &emsp;$400.00</label><br />
+    <input type="checkbox" id="pan2" name="pan2" value="Chocolate" />
+    <label for="pan2">Chocolate &emsp;$400.00</label><br />
+    <input type="checkbox" id="pan3" name="pan3" value="Fresa" />
+    <label for="pan3">Fresa &emsp;$450.00</label><br />
+    <input type="checkbox" id="pan4" name="pan4" value="Limón" />
+    <label for="pan4">Limón &emsp;$450.00</label><br />
+    <input type="checkbox" id="pan5" name="pan5" value="Tres leches" />
+    <label for="pan5">Tres leches &emsp;$450.00</label><br />
+    <input type="checkbox" id="pan6" name="pan6" value="Combinado" />
+    <label for="pan6">Combinado &emsp;$450.00</label><br />
+    <br />
+    <h3>Relleno</h3>
+    <input type="checkbox" id="relleno1" name="relleno1" value="Mermelada" />
+    <label for="relleno1">Mermelada &emsp;+ $25</label><br />
+    <input type="checkbox" id="relleno2" name="relleno2" value="Ganache" />
+    <label for="relleno2">Ganache &emsp;+ $30</label><br />
+    <input type="checkbox" id="relleno3" name="relleno3" value="Crema batida" />
+    <label for="relleno3">Crema batida &emsp;+ $25</label><br />
+    <br />
+    <h3>Cubiertas y decoraciones</h3>
+    <input type="checkbox" id="decor1" name="decor1" value="Frutas" />
+    <label for="decor1">Frutas &emsp;+ $40</label><br />
+    <input type="checkbox" id="decor2" name="decor2" value="Fondant" />
+    <label for="decor2">Fondant &emsp;+ $60</label><br />
+    <input type="checkbox" id="decor3" name="decor3" value="Chantilly" />
+    <label for="decor3">Chantilly &emsp;+ $40</label><br />
+    <input type="checkbox" id="decor4" name="decor4" value="Merengue" />
+    <label for="decor4">Merengue &emsp;+ $40</label><br />
+    <input type="checkbox" id="decor5" name="decor5" value="Caramelo" />
+    <label for="decor5">Caramelo &emsp;+ $50</label><br />
+    <br />
+    <br />
+    <input
+      type="submit"
+      id="submit"
+      name="submit"
+      value="Enviar"
+      onclick="submit()"
+    />
+  </body>
+</html>
