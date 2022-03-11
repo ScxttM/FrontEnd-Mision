@@ -3,10 +3,11 @@
   color: grey;
 }
 
-.container {
+nav {
   overflow: hidden;
   clear: both;
 }
+
 .nav {
   list-style-type: none;
   padding: 0;
