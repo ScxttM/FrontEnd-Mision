@@ -7,10 +7,16 @@
     <meta name="title" content="Vaccination" />
     <title>Vaccination</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins"
     />
+    <script
+      src="https://kit.fontawesome.com/aa2cf8d3bc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav style="background-color: rgba(255, 255, 255, 0.39)">
@@ -34,9 +40,90 @@
         </li>
 
         <li style="float: left">
-          <a class="text-blue" style="font-size: 20px" href="#">Vaccination</a>
+          <a class="text-blue" style="font-size: 1.5em" href="#">Vaccination</a>
         </li>
       </ul>
     </nav>
+    <div class="row">
+      <div class="column">
+        <h1 style="font-size: 3em">
+          Fight Virus <br />
+          With Vaccines
+        </h1>
+        <p>
+          Let's stop this pandemic by killing the virus <br />
+          with a vaccine, don't let yourself and your <br />
+          family get infected.
+        </p>
+        <br />
+        <p style="color: #1f3f70">
+          Best protection &emsp;&emsp;&emsp; Selected vaccines
+        </p>
+        <br />
+        <div>
+          <h3 style="font-size: 1.2em">Schedule your vaccinations</h3>
+          <form>
+            <label for="location">Location: </label>
+            <input type="text" name="location" id="location" /><br />
+            <label for="date">Date: </label>
+            <input type="date" name="date" id="date" /><br />
+            <label for="vaccine">Vaccine type: </label>
+            <select name="vaccine" id="vaccine">
+              <option value="Moderna">Moderna</option>
+              <option value="AstraZeneca">AstraZeneca</option>
+              <option value="Sinovac">Sinovac</option>
+              <option value="Pfizer">Pfizer</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="bg-image"></div>
+    </div>
+    <div class="bar">
+      <image class="img-bar" src="./images/astrazeneca.png"></image>
+      <image class="img-bar" src="./images/sinovac.png"></image>
+      <image class="img-bar" src="./images/pfizer.png"></image>
+      <image class="img-bar" src="./images/moderna.png"></image>
+    </div>
+    <div class="container">
+      <h1 style="font-size: 3em">Why should I vaccine?</h1>
+      <p>
+        In order to avoid any doubts about getting the COVID-19 <br />
+        vaccine, identify the following 4 benegits of COVID-19 <br />
+        vaccination:
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="column-4">
+          <h3>Minimize the spread of viruses</h3>
+          <p>
+            Vaccine has been proven effective to prevent someone from getting
+            infected with Coronaviurus
+          </p>
+        </div>
+        <div class="column-4">
+          <h3>Forming antibodies</h3>
+          <p>
+            COVID-19 vaccine proven to help shape antibody response for inmune
+            system
+          </p>
+        </div>
+        <div class="column-4">
+          <h3>Protecting people nearby</h3>
+          <p>
+            The benefits of COVID-19 vaccination are the vaccine that we get can
+            also help protect people around us
+          </p>
+        </div>
+        <div class="column-4">
+          <h3>Creating group immunity</h3>
+          <p>
+            COVID-19 vaccination is also beneficial for creating group immunity
+            of herd immunity
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

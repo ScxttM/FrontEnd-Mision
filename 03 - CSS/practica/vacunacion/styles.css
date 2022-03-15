@@ -3,6 +3,9 @@
   color: grey;
 }
 
+body {
+  margin: 0;
+}
 nav {
   overflow: hidden;
   clear: both;
@@ -10,17 +13,14 @@ nav {
 
 .nav {
   list-style-type: none;
-  padding: 0;
   margin: 30px 80px;
+  height: 50px;
   font-weight: bold;
-  overflow: hidden;
-  clear: both;
 }
 
 .nav li {
   float: right;
-  align-items: center;
-  padding-inline-end: 30px;
+  padding-inline-end: 5%;
 }
 
 a {
@@ -31,13 +31,21 @@ a {
   color: #1072f8;
 }
 
+p{
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #1f3f70;
+}
+
 button {
   padding: 10px 20px;
   border: none;
   background-color: #1072f8;
   color: white;
   border-radius: 5px;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
   transition-duration: 0.4s;
   cursor: pointer;
   margin: -10px;
@@ -47,4 +55,69 @@ button:hover {
   background-color: #0f67e2;
   color: white;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 9px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding-left: 10%;
+}
+
+.column-4{
+  float: left;
+  width: 20%;
+  padding: 2%;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.bg-image {
+  float: right;
+  width: 40%;
+  padding: 20em 10em;
+  background-image: url("./images/nurse.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+input{
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+  color: #1f3f70;
+  margin: 1em;
+}
+
+select{
+  border: none;
+  border-radius: 3px;
+  background-color: lightgrey;
+  margin: 1em;
+}
+
+.bar{
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5%;
+}
+
+.img-bar {
+  padding: 0 2.5%;
+  float: left;
+  width: 20%;
+  filter: grayscale(90%);
+  opacity: 0.3;
+}
+
+.container{
+  margin-left: 10%;
+  margin-right: 10%;
 }
