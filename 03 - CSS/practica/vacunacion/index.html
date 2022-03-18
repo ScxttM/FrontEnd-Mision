@@ -1,89 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.6.9/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.6.9/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Vaccination" />
+    <title>Vaccination</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/aa2cf8d3bc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <nav style="background-color: rgba(255, 255, 255, 0.39)">
+      <ul class="nav">
+        <li>
+          <a href="#">
+            <button type="button">Hoax Buster</button>
+          </a>
+        </li>
+        <li>
+          <a href="#">Regulation</a>
+        </li>
+        <li>
+          <a href="#">News</a>
+        </li>
+        <li>
+          <a href="#">Education</a>
+        </li>
+        <li>
+          <a href="#">Database</a>
+        </li>
+
+        <li style="float: left">
+          <a class="text-blue" style="font-size: 1.5em" href="#">Vaccination</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="row">
+      <div class="column-l">
+        <h1>
+          Fight Virus <br />
+          With Vaccines
+        </h1>
+        <p>
+          Let's stop this pandemic by killing the virus <br />
+          with a vaccine, don't let yourself and your <br />
+          family get infected.
+        </p>
+        <br />
+        <p style="color: #1f3f70">
+          Best protection &emsp;&emsp;&emsp; Selected vaccines
+        </p>
+        <br />
+        <div>
+          <h3 style="font-size: 1.2em">Schedule your vaccinations</h3>
+          <form>
+            <label for="location">Location: </label>
+            <input type="text" name="location" id="location" /><br />
+            <label for="date">Date: </label>
+            <input type="date" name="date" id="date" /><br />
+            <label for="vaccine">Vaccine type: </label>
+            <select name="vaccine" id="vaccine">
+              <option value="Moderna">Moderna</option>
+              <option value="AstraZeneca">AstraZeneca</option>
+              <option value="Sinovac">Sinovac</option>
+              <option value="Pfizer">Pfizer</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="bg-image"></div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <div class="bar">
+      <image class="img-bar" src="./images/astrazeneca.png"></image>
+      <image class="img-bar" src="./images/sinovac.png"></image>
+      <image class="img-bar" src="./images/pfizer.png"></image>
+      <image class="img-bar" src="./images/moderna.png"></image>
+    </div>
+    <div class="container">
+      <h1>Why should I vaccine?</h1>
+      <p>
+        In order to avoid any doubts about getting the COVID-19 <br />
+        vaccine, identify the following 4 benegits of COVID-19 <br />
+        vaccination:
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="column-4">
+          <h3>Minimize the spread of viruses</h3>
+          <p>
+            Vaccine has been proven effective to prevent someone from getting
+            infected with Coronaviurus
+          </p>
+        </div>
+        <div class="column-4">
+          <h3>Forming antibodies</h3>
+          <p>
+            COVID-19 vaccine proven to help shape antibody response for inmune
+            system
+          </p>
+        </div>
+        <div class="column-4">
+          <h3>Protecting people nearby</h3>
+          <p>
+            The benefits of COVID-19 vaccination are the vaccine that we get can
+            also help protect people around us
+          </p>
+        </div>
+        <div class="column-4">
+          <h3>Creating group immunity</h3>
+          <p>
+            COVID-19 vaccination is also beneficial for creating group immunity
+            of herd immunity
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <div class="row">
+      <div class="bg-image2"></div>
+      <div class="column-r">
+        <h1>Preparations before vaccine</h1>
+        <p>
+          The success of vaccines is strongly influenced by the strength of the
+          body's immune system. Therefore, there are several things that can be
+          tried to make the COVID-19 vaccine work:
+        </p>
+        <br />
+        <ul>
+          <li>Avoid alcoholic beverages</li>
+          <br />
+          <li>Avoid stress</li>
+          <br />
+          <li>Eat healthy food</li>
+          <br />
+          <li>Get enough sleep</li>
+          <br />
+          <li>Exercise or physical activity</li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br />
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <div class="row">
+      <div class="column-l">
+        <h1>Emergency Contact</h1>
+        <p>
+          Contact one of the contact below if you or your family feel unwell and
+          have similar symptoms such as Covid-19, make sure you also take care
+          of yourself before reporting to us:
+        </p>
+        <br /><br />
+        <div class="row">
+          <div class="column-l">
+            <h3>Call</h3>
+            <p>021.123.145.14</p>
+            <br />
+            <button>Call Now</button>
+          </div>
+          <div class="column-r">
+            <h3>Chat</h3>
+            <p>021.123.145.14</p>
+            <br />
+            <button>Chat Now</button>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="column-l">
+            <h3>Video Call</h3>
+            <p>021.123.145.14</p>
+            <br />
+            <button>Video Call Now</button>
+          </div>
+          <div class="column-r">
+            <h3>Message</h3>
+            <p>021.123.145.14</p>
+            <br />
+            <button>Message Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-image3"></div>
+    </div>
+    <br /><br /><br />
+    <footer>
+      <div class="row">
+        <div class="column-4">
+          <h3>Vaccination</h3>
+          <p>Our goal is to help the world free from the ongoing pandemic</p>
+        </div>
+        <div class="column-4">
+          <h3>About</h3>
+          <ul>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">News & Blog</a></li>
+          </ul>
+        </div>
+        <div class="column-4">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">How we work? </a></li>
+            <li><a href="#">Capital</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+        <div class="column-4">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <p style="text-align: bottom">
+        @2021 Vaccination. All rights reserved. &emsp;
+        <a href="#">Terms & Agreements</a>&emsp;
+        <a href="#">Privacy Policy</a>
+      </p>
+    </footer>
   </body>
 </html>
