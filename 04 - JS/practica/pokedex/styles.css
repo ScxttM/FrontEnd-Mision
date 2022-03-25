@@ -30,19 +30,25 @@ body {
 .flex-container {
   display: flex;
   flex-direction: row;
+  /* border: 5px solid grey;
+  border-radius: 15px;   */
 }
 
 .flex-item-left {
   background-color: #f1f1f1;
-  padding: 10px;
+  padding: 35px;
   flex: 50%;
   text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .flex-item-right {
   background-color: dodgerblue;
-  padding: 10px;
+  padding: 35px;
   flex: 50%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -57,5 +63,10 @@ input {
 }
 
 .card-content {
-    height: 500px;
+    height: 400px;
+    width: auto;
+    margin: 10%;
+    background-color:beige;
+    border: 2px solid grey;
+    border-radius: 15px;
 }
