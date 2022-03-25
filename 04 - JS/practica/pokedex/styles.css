@@ -1,0 +1,61 @@
+* {
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  background-image: url("./images/background.jpg");
+  margin: 0;
+}
+
+.principal-container {
+  background-color: #be1431;
+  /* display: flex; */
+  justify-self: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2%;
+  border-radius: 30px;
+  padding: 3%;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+  text-align: center;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+input {
+  border-radius: 5px;
+}
+
+.card-content {
+    height: 500px;
+}
