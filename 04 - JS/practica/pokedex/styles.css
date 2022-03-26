@@ -44,8 +44,8 @@ body {
 }
 
 .flex-item-right {
-  background-color: dodgerblue;
-  padding: 35px;
+  background-color: #f1f1f1;
+  padding: 50px 35px;
   flex: 50%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -55,6 +55,7 @@ body {
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
+    border-radius: 10px;
   }
 }
 
@@ -62,16 +63,16 @@ input {
   border-radius: 5px;
 }
 
-button{
+button {
   border-radius: 5px;
   background-color: #be1431;
   color: white;
 }
 
 .card-content {
-  height: 400px;
+  height: 450px;
   width: auto;
-  margin: 10%;
+  margin: 15px;
   background-color: beige;
   border: 2px solid grey;
   border-radius: 15px;
@@ -81,4 +82,50 @@ button{
   height: 250px;
   width: auto;
   margin: 10%;
+}
+
+.card-name {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.info {
+  height: 200px;
+  width: auto;
+  margin: 5% 10%;
+  background-color: #022d29;
+  border: 2px solid grey;
+  border-radius: 15px;
+  color: gold;
+}
+
+.info > p {
+  margin: 5%;
+}
+
+.stats {
+  display: flex;
+  padding: 20px;
+}
+
+.stats > div {
+  flex-direction: row;
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+.abilities {
+  height: 150px;
+  width: auto;
+  margin: 5% 10%;
+  padding: 20px;
+  background-color: dodgerblue;
+  border: 2px solid grey;
+  border-radius: 15px;
+  color: white;
+  text-transform:capitalize;
+  display: flex;
 }
