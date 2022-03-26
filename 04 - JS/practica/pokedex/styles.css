@@ -62,11 +62,23 @@ input {
   border-radius: 5px;
 }
 
+button{
+  border-radius: 5px;
+  background-color: #be1431;
+  color: white;
+}
+
 .card-content {
-    height: 400px;
-    width: auto;
-    margin: 10%;
-    background-color:beige;
-    border: 2px solid grey;
-    border-radius: 15px;
+  height: 400px;
+  width: auto;
+  margin: 10%;
+  background-color: beige;
+  border: 2px solid grey;
+  border-radius: 15px;
+}
+
+.card-img {
+  height: 250px;
+  width: auto;
+  margin: 10%;
 }
